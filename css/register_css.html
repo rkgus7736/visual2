@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<style type="text/css">
+	*{
+		magin:0;
+		padding:0;
+	}
+	h1{
+		text-align: center;
+		width:520px;
+		margin:0 auto;
+		font-weight: normal;
+	}
+	#container{
+		border: 1px solid #e5e5e5;
+		width:520px;
+		padding:70px;
+		margin:0 auto;
+	}
+	label {
+		font-size:14px;
+		font-weight: bold;
+	}
+	input {
+		width: 100%;
+		border : none;
+		outline: none;
+		font-size: 18px;
+	}
+	#email{
+		width:80%;
+		font-weight: bold;
+	}
+	.email{
+	border-bottom: 2px solid #e5e5e5;
+	}
+	.host{
+		width:20%;
+		font-weight: bold;
+		color:gray;
+	}
+	ul{
+		font-size: 12px;
+		font-weight: bold;
+		color:gray;
+		padding-left: 30px;
+	}
+</style>
+</head>
+<body>
+	<h1>kakao</h1>
+	<div id="container">
+		<h3>카카오계정 정보를 입력해 주세요</h3>
+		<form action="">
+			<p>
+					<label for="email">카카오계정 이메일</label>
+				<div class="email">
+					<input type="text" id="email" placeholder="아이디입력"><span class="host">@kakao.com</span>
+				</div>
+				<ul>
+					<li>입력한 카카오메일로 카카오계정에 로그인할 수 있습니다.	</li>
+					<li>한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해주세요.	</li>
+					<li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+				</ul>
+				
+				
+			</p>
+			<p>
+				<label for="pass">비밀번호</label> 
+				<input type="password" id="pass"placeholder="비밀번호(8~32자리)">
+				<input type="password"	placeholder="비밀번호 재입력">
+			</p>
+			<p>
+				<label for="nick">닉네임</label>
+				<input type="text" id="nick" placeholder="닉네임을 입력하세요 ">
+				<span>0/20</span>
+			</p>
+			<p>
+				<label for="tel">전화번호</label> <select>
+					<option>+82</option>
+					<option>+1</option>
+					<option>+84</option>
+					<option>+55</option>
+				</select> <input type="text" id="tel" placeholder="전화번호">
+			</p>
+			<p>
+				<button type="button">인증번호 전송</button>
+			</p>
+			<p>
+				<button>다음</button>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

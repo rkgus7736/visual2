@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div{
+            width: 500px;
+            height: 100px;
+            border: 20px solid black;
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+        #box1{
+            box-sizing: content-box;
+        }
+        #box2{
+            /* width 길이 값 = padding + border + @, width 값을 맞춤 */
+            box-sizing: border-box ;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id = "box1"></div>
+    <div id = "box2"></div>
+  
+</body>
+</html>

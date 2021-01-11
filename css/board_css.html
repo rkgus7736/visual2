@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 글쓰기 페이지</title>
+<style type="text/css">
+	* {
+		maring: 0;
+		padding: 0;
+	}
+	h1{
+		width : 1200px;
+		padding: 10px;
+		margin: 15px auto;
+	}
+	table{
+		width:1200px;
+		margin: 0 auto;
+	}
+	.tit{
+		width:150px;
+		font-size:24px;
+		font-weight: bold;
+	}
+	td{
+		padding:10px;
+		/* border : 1px solid black; */
+	}
+	input{
+		font-size:20px;	
+		width:500px;
+		height: 32px;
+	}
+	textarea{
+		width:100%;
+		height: 400px;
+		font-size:20px;	
+		padding:5px;
+		resize: none; /*크기조정 X*/
+	}
+	button{
+		width:90px;
+		height: 60px;
+		font-size:20px;
+		color:white;
+		font-weight : bold;
+		background-color: #5587ED;
+		border: 1px outset #1F51B7; 
+	}
+	.right{
+		text-align: right;
+	}
+</style>
+</head>
+<body>
+	<h1>게시판 글쓰기 페이지</h1>
+	<form action="" name="frm">
+		<table>
+			<tr>
+				<td class="tit"><label for="title">제목</label></td>
+				<td><input type="text" name="title" id="title1"></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="writer">작성자</label></td>
+				<td><input type="text" name="writer1" id="writer"></td>
+			</tr>
+			<tr>
+				<td class="tit"><label for="content">내용</label></td>
+			</tr>
+			<tr>
+				<td colspan="2"><textarea name="content" id="content"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button>글쓰기</button>
+				</td>
+				<td class="right">
+					<button>취소</button>
+				</td>
+
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>
+
+
+
+
+

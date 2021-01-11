@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Coupang Login</title>
+<style>
+	*{
+		margin : 0;
+		padding: 0;
+	}
+	label{
+		width:32px;
+		height: 32px;
+		background-size: 32px; /*가로 세로*/
+		background-color:#e8e8e8;
+		background-image: url("email.png");
+		display: inline-block;/*label이 인라인 태그라서*/
+		float: left;/*레이블과 input 딱 붙이기*/
+		border: 1px solid lightgray;
+		border-right: none;/*테두리가 두개 다 겹치면 두꺼우니 하나를 없앤것*/
+	}
+	input{
+		width:200px;
+		height: 32px;
+		display: inline-block;
+		float: left;
+		border: 1px solid lightgray;
+	}
+	
+		</style>
+</head>
+<body>
+	<div>
+		<!-- 상단 로고 -->
+		<nav>
+			<img src = coupanglogo.jpg>
+		</nav>
+		<!-- 아이디 이메일 아이콘 -->
+		<label for "id" ></label> 
+			<input type="text" name="id" id="member_id" placeholder="아이디를 입력하세요" required>
+					
+		<!-- 비밀번호 아이콘 -->
+		<label for "password" ></label> 
+			<input type="password" name="passwd" id="member_pw" placeholder="비밀번호를 입력하세요"  required>
+			
+		<!-- 체크박스 자동로그인 -->
+			<tr>
+				<td>
+				<input type ="checkbox" name="autologin" values = "t1">
+				</td>
+			</tr>
+		<!-- 아아디(이메일) / 비밀번호찾기> -->
+		<!-- 로그인 파란창 -->
+		</table>
+		<!-- 회원가입-->
+	
+	</div>
+
+</body>
+</html>

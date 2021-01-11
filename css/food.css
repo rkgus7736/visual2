@@ -1,0 +1,22 @@
+@charset 'utf-8';
+ /* 전체 선택자*/
+ *{
+    font-family: '궁서';
+}
+/*태그 선택자*/
+li{
+    color:chocolate;
+}
+/*strong 태그에 글자색을 빨간색으로 지정*/
+strong{
+    color : red;
+}
+/*아이디 선택자 : 해당 아이디만 디자인을 적용*/
+#img_food{
+    margin-left: 50px;
+}
+/*클래스 선택자 : 해당 클래스 속성값을 가지고 있는 태그들에게 디자인을 적용*/
+.under{
+    text-decoration: underline;/*밑줄*/
+    font-style: italic;/*기울임꼴*/
+}

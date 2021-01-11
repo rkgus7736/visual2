@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+<style>
+     table{
+     	width:800px; /*height는 굳이 주지않는다*/
+     	border-collapse : collapse; /* 혹시 중간중간 줄이 있으면 이 속성이 빠진것*/
+     	border-top:2px solid gray;
+     	border-bottom: 2px solid gray;
+     	}
+     	/*그룹 선택자*/
+     	th,td{
+     		padding: 10px 0px; /*상하에만 넣어줌*/
+     		font-size: 20px;
+     		text-align: center;
+     		}
+     	tr{
+     		border-bottom: 1px solid gray;   	
+     	}
+     	.back{
+     		background-color: #e8e8e8;
+     	}
+     	.title{
+     		width: 500px; /*테이블이란건 가장 큰 길이를 기준으로 고정을 해준다*/
+     	}
+     
+</style>
+</head>
+<body>
+		<table>
+	 			 <tr class = "back">
+	 		 		<th>No.</th>
+	 		 		<th class="title">title</th>
+	 		 		<th>count</th>
+	 		 		<th>date</th>
+	 		 	</tr>
+	 			<tr>
+	 				<td>1</td><td>제목</td><td>0</td>	<td>2010-11-19</td>
+	 			</tr>
+	 			<tr>
+					<td>2</td><td>제목</td><td>3450</td><td>2010-11-19</td>										
+				</tr>
+				<tr>
+					<td>3</td><td>제목</td><td>450</td><td>2010-11-19</td>										
+				</tr>
+				<tr>
+					<td>4</td><td>제목</td><td>660</td><td>2010-11-19</td>										
+				</tr>
+				<tr>
+					<td>5</td><td>제목</td><td>20</td><td>2010-11-19</td>										
+				</tr>
+				<tr>
+					<td>6</td><td>제목</td><td>1</td>	<td>2010-11-19</td>										
+				</tr>
+				
+		</table>		
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<style type="text/css">
+	div{
+		width:200px;
+		border : 1px solid black;
+		margin:200px;
+		/* ellipsis : ... 처리
+		   clip : 자르기 */
+		text-overflow: ellipsis;
+		overflow: hidden;
+		/*공백 줄바꿈 탭 처리, (공백/탭 1병합, 줄바꿈 X) */
+		white-space: nowrap;
+	}
+</style>
+</head>
+<body>
+	<div>
+		대한민국은 민주공화국이다. 모든 국민은 직업선택의 자유를 가진다. 모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다.
+		대법원은 법률에 저촉되지 아니하는 범위안에서 소송에 관한 절차, 법원의 내부규율과 사무처리에 관한 규칙을 제정할 수 있다. 대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다
+	</div>
+</body>
+</html>

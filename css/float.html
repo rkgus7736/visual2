@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float 예제</title>
+<style type="text/css">
+	div{
+		width: 500px;
+		height: 300px;
+		border:  1px solid black;
+		font-size: 30px;
+		text-align: center;
+		padding:50px;
+		box-sizing: border-box;
+	}
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+	.normal{
+		clear:both;
+	}
+	#container{
+		width:100%;
+		padding:0;
+		height:auto;
+		background-color: red;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div class="left">1</div>
+		<div class="left">2</div>
+		<div class="right">3</div>
+		<div class="left">4</div>
+	</div>
+	<div class="normal">5</div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메뉴</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul {
+		list-style-type: none;
+		width: 1000px;
+		display: inline-block;
+	}
+	
+	li {
+		width: 100px;
+		height: 60px;
+		margin-right: 10px;
+		text-align: center;
+		float: left;
+		padding:20px 0px;
+		box-sizing: border-box;
+	}
+	nav{
+		width:1200px;
+		text-align: center;
+		background-color: #e8e8e8;
+		margin: 50px auto;
+		border-radius: 10px;
+	}
+	.container{
+		width:1200px;
+		margin:0 auto;
+	}
+	section{
+		width:1000px;
+		height:500px;
+		float:left;
+		box-sizing: border-box;
+	}
+	aside{
+		width:200px;
+		height:500px;
+		float:left;
+		box-sizing: border-box;
+	}
+	footer{
+		padding: 50px 0px;
+		background-color: #e8e8e8;
+		clear:both;
+	}
+	table{
+		width:90%;
+		border-collapse: collapse;
+		border-top : 2px solid gray; 
+		border-bottom: 2px solid gray; 
+	}
+	/*그룹선택자*/
+	th,td{
+		padding:10px 0px;
+		font-size: 20px;
+		text-align: center;
+	}
+	tr{
+		border-bottom:1px solid gray;
+	}
+	.back{
+		background-color: #e8e8e8;
+	}
+	.title{
+		width: 500px;
+	}
+	img{
+		width:100%;
+	}
+	.logo{
+		display: inline-block;
+		width:50%;
+		height: 200px;
+	}
+	.img_logo{
+		width:200px;
+		float:right;
+	}
+	.company{
+		float:left;
+		width:50%;
+		height: 200px;
+	
+	}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>HOME</li>
+			<li>|</li>
+			<li>회사소개</li>
+			<li>|</li>
+			<li>브로슈어</li>
+			<li>|</li>
+			<li>QnA</li>
+			<li>|</li>
+			<li>오시는길</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<section>
+			<article>
+				<!-- 테이블 -->
+				<table>
+					<tr class="back">
+						<th>No.</th>
+						<th class="title">title</th>
+						<th>count</th>
+						<th>date</th>
+					</tr>
+					<tr>
+						<td>1</td><td>제목</td><td>0</td>	<td>2010-11-19</td>
+					</tr>
+					<tr>
+						<td>2</td><td>제목</td><td>3450</td>	<td>2010-11-19</td>
+					</tr>
+					<tr>
+						<td>3</td><td>제목</td><td>450</td>	<td>2010-11-19</td>
+					</tr>
+					<tr>
+						<td>4</td><td>제목</td><td>660</td>	<td>2010-11-19</td>
+					</tr>
+					<tr>
+						<td>5</td><td>제목</td><td>20</td>	<td>2010-11-19</td>
+					</tr>
+					<tr>
+						<td>6</td><td>제목</td><td>1</td>	<td>2010-11-19</td>
+					</tr>
+				</table>
+			</article>
+		</section>	
+		<aside>
+			<!-- 광고 배너 -->
+			<img alt="" src="resource/img/food1.jpg">
+			집근처 꼬치전문점 찾기
+		</aside>
+	</div>
+	<footer>
+		<!-- footer -->
+		<div class="container">
+			<div class="company">
+				회사명<br>
+				주소 : 서울시 마포구 노고산동....<br>
+				연락처 : 02-000-0000<br>
+				SNS : <a href="#">페이스북</a>
+			</div>
+			<div class="logo">
+				<img class="img_logo" src="resource/img/food3.jpg">
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+
+
+
+
+
+

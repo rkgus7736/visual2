@@ -1,0 +1,77 @@
+css는 웹에서 디자인 부분을 담당
+    - 브라우저마다 tag를 표현하는 디자인 조금씩 다름.
+    - CSS는 웹브라우저가 달라도 동일한 디자인 출력
+
+선택자(selector)
+    - 직접 선택자 : 태그 선택자, 아이디 선택자, 클래스 선택자, 전체 선택자
+    - 간접 선택자    
+
+css 적용방법
+선택자{
+    디자인속성 : 값;
+    디자인속성 : 값;
+    .....
+}
+
+
+
+전체 선택자 : 모든 태그에서 공통적으로 적용될 디자인을 적용할때
+태그 선택자 : 현재 웹페이지에서 해당 태그의 기본 베이스가 되는 디자인 적용할때
+아이디 선택자 : 현재 웹페이지에 있는 id 속성 값에 해당하는 태그에 디자인을 적용할때
+클래스 선택자 : 미리 디자인을 만든 후 차후에 여러 태그들에게 해당에 디자인을 적용할때
+
+font css
+	--폰트 두께
+	font-weight: bold;
+	--폰트 색상
+	color : #9274eb;
+	--텍스트 밑줄, 윗줄, 중간줄
+	text-decoration: line-through;
+	--이탤릭체
+	font-style: italic;
+	/* text-decoration: overline;
+	text-decoration: underline;
+	text-decoration: none; */
+	--텍스트 정렬
+	text-align: center;
+	--글꼴 설정
+	font-family: '궁서';
+	--로컬 폰트 로드
+	@font-face {
+       font-family: 'DoHeyon';
+       src: url('font/DoHyeon-Regular.ttf');
+    }
+    
+list-type
+	 블릿문자 변경
+	 list-style-type: circle;
+table 
+	테이블 테두리 하나로 설정
+	border-collapse: collapse;
+box modeling 
+	--가로 길이
+	width : 1200px;
+	--세로 길이
+	height : 600px;
+	--테두리 안쪽 여백
+	padding: 10px; -- 상하좌우
+	padding: 10px 20px;-- 상하, 좌우
+	padding: 10px 20px 30px 40px; -- 상 오 하 왼
+	margin: 15px auto; -- margin은 바깥 여백 넣는 방법은 padding과 동일함
+background 
+	 background-image: url('resource/img/background.jpg');
+    background-repeat: no-repeat;
+    /*배경을 채우는 부분*/
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-origin: content-box;
+    background-color: darkorange;
+float
+	--해당 요소를 화면 왼쪽부터 배치
+	float : left; 
+	--해당 요소를 화면 오른쪽부터 배치
+	float : right;
+
+display
+	--해당 태그를 inline 태그 속성과 block 태그 속성 둘다 가지는 상태로 만듬
+	display:inline-block;

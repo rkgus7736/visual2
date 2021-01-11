@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>배경 CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /* 선두께 선형태 색상*/
+            border: 10px dashed black;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        #back1{
+            width: 600px;
+            height: 400px;
+            padding : 50px;/*상하좌우*/
+            background-image: url('resource/img/background.jpg');
+            background-repeat: no-repeat;
+            /*배경을 채우는 부분*/
+            background-size: cover;
+            /* background-size: 100% 100%; */
+            background-origin: content-box;
+            background-color: darkorange;
+        }
+        #back2{
+            padding : 20px 50px; /* 상하  좌우*/
+            margin : 10px auto; /*해당 박스를 가운데로 위치*/
+        }
+        #back3{
+            width: 300px;
+            height: 300px;
+            border : 10px solid black;
+            padding : 10px 20px 30px 40px ;/* 상 오 하 왼 */
+        }
+        /*
+            padding-top : 10px;
+            padding-bottom : 20px; 
+            padding-left : 30px;
+            padding-right : 40px;
+        */
+    </style>
+</head>
+<body>
+    <div id="back1"></div>
+    <div id="back2"></div>
+    <span id="back3"></span>
+</body>
+</html>

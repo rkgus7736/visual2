@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GoogleMain</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.container{
+		width: 700px;
+		height: 400px;
+		margin: 50px auto;
+		/*border: 1px solid black;처음에 영역잡기 편하게 살펴보려고 보더 생성*/
+		text-align: center;
+	}
+	.share{
+		width: 22px;
+		margin-left: -50px; /*margin은 상대좌표라서 자기기준 +면 오른쪽 -면 왼쪽*/
+	
+	}
+	.icon{
+		width:32px;
+		height: 32px;
+		float: left;
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+	input{
+		width: 450px;
+		height: 32px;
+		border: none;
+		float: left;
+		outline: none; /*깜빡깜빡*/
+		font-size: 18px;
+	}
+	p{
+		display: inline-block;
+		margin: 20px auto; /*감싸고있는애가 사이즈가 딱 맞게 해줌*/
+		padding: 10px;
+		border: 1px solid #e5e5e5;
+		border-radius: 32px;
+	}
+	button{
+		padding:15px 20px; /*글자 수에 따라 달라지는 버튼 크기*/
+		background-color: #e5e5e5;
+		outline-color: gray;	
+		border: none; 
+		font-size:16px;
+		line-height: 16px; /*영문과 한글의 크기차이 때문에 블록크기가 다를때*/
+		border-radius: 10px;
+		margin-right: 30px;
+	}
+	.border_none{
+		border:none;
+	}
+	
+</style>
+</head>
+<body>
+<div class="container">
+	<a href = "https://www.google.co.kr"><img alt="" src="resource/main_logo.gif"></a>
+	<a href ="#"><img alt="" src ="resource/share.png" class ="share"></a>
+	<p>
+		<label><img src="resource/search.png" class="icon"></label>
+		<input type="text" id="search">
+		<a href="#"><img alt="" src="resource/keyboard.png" class="icon"></a>
+		<a href="#"><img alt="" src="resource/mic.png" class="icon"></a>
+	</p>
+	<p class="border_none">
+		<button type="button">Google 검색</button>
+		<button type="button">I'm Feeling Lucky</button>
+	</p>
+</div>
+
+	
+	
+	
+</body>
+</html>
